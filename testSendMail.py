@@ -4,9 +4,9 @@ from pymongo import MongoClient
 from io import open_code
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
-password = os.environ.get("MONGODB_PWD")
+password = os.environ.get("*****")
 ca = certifi.where()
-url = f"mongodb+srv://khang:{password}@cluster0.nujj6h1.mongodb.net/?retryWrites=true&w=majority"
+url = f"******"
 connection = MongoClient(url,tlsCAFile=ca)
 collection = connection['dbn_users']['col_users']
 findS = list(collection.find({}))

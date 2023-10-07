@@ -10,7 +10,7 @@ from selenium.webdriver.common.proxy import Proxy,ProxyType
 sltk = int(input("So luong:"))
 # proxy = str(input('Enter your Proxy: '))
 
-proxy_ip_port = '192.168.1.20:4001'
+proxy_ip_port = '***'
 proxy = Proxy()
 proxy.proxy_type = ProxyType.MANUAL
 proxy.http_proxy = proxy_ip_port
@@ -19,7 +19,7 @@ capabilities = webdriver.DesiredCapabilities.CHROME
 proxy.add_to_capabilities(capabilities)
 
 def run(numOfMulti):
-    PROXY = '192.168.1.20:4001'
+    PROXY = '***'
     chrome_options = webdriver.ChromeOptions() #truy cấp đến các options của chrome
     chrome_options.add_argument("--incognito") #bật chế độ ẩn danh để không lưu thông tin tài khoản
     chrome_options.add_argument("--disable-web-security")
